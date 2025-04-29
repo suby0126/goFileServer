@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>파일 서버 관리</title>
+  <script src="./assets/auth-manager.js" defer></script>
+  <script src="./assets/file-uploader.js" defer></script>
+  <script src="./assets/file-manager.js" defer></script>
+  <script src="./assets/file-deleter.js" defer></script>
+</head>
+<body>
+
+<h2>로그인</h2>
+<auth-manager></auth-manager>
+
+<hr/>
+
+<h2>파일 업로드</h2>
+<file-uploader upload-url="/upload" use-type="profile"></file-uploader>
+
+<hr/>
+
+<h2>파일 리스트</h2>
+<file-manager list-url="/files" download-url="/download" delete-url="/delete"></file-manager>
+
+</body>
+</html>
